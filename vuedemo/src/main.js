@@ -29,7 +29,7 @@ let router = new VRouter({
       component: Banana,
       children: [
         {
-          path: '/yellow',
+          path: 'yellow',
           name: 'YellowBanner',
           component: YellowBanner
         }

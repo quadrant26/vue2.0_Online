@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <p><img src="./assets/logo.png"></p>
-    <router-view/>
+    <router-view></router-view>
+    <br>
+    <br>
 
     <router-link to="/apple">to Apple</router-link>
     <br>
@@ -15,7 +17,7 @@
     <router-link :to="{path: 'banana'}">to Banana</router-link>
     <br>
     <br>
-    <router-link :to="{path: 'banana/yellow'}">to YellowBanana</router-link>
+    <router-link :to="{path: '/banana/yellow'}">to YellowBanana</router-link>
   </div>
 </template>
 
