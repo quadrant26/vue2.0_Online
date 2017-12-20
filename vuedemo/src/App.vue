@@ -8,13 +8,13 @@
     <router-link to="/apple">to Apple</router-link>
     <br>
     <br>
-    <router-link :to="'apple'">to Apple</router-link>
+    <router-link :to="'/apple'">to Apple</router-link>
     <br>
     <br>
-    <router-link :to="{path: 'apple/green'}">to Apple</router-link>
+    <router-link :to="{path: '/apple/green'}">to Apple</router-link>
     <br>
     <br>
-    <router-link :to="{path: 'banana'}">to Banana</router-link>
+    <router-link :to="{path: '/banana'}">to Banana</router-link>
     <br>
     <br>
     <router-link :to="{path: '/banana/yellow'}">to YellowBanana</router-link>
