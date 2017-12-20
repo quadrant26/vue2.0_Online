@@ -1,13 +1,30 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <p><img src="./assets/logo.png"></p>
     <router-view/>
+
+    <router-link to="/apple">to Apple</router-link>
+    <br>
+    <br>
+    <router-link :to="'apple'">to Apple</router-link>
+    <br>
+    <br>
+    <router-link :to="{path: 'apple/green'}">to Apple</router-link>
+    <br>
+    <br>
+    <router-link :to="{path: 'banana'}">to Banana</router-link>
+    <br>
+    <br>
+    <router-link :to="{path: 'banana/yellow'}">to YellowBanana</router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+
+  }
 }
 </script>
 
@@ -19,5 +36,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+p{
+  text-align: center;
 }
 </style>
