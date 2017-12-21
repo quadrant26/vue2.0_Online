@@ -20,17 +20,14 @@ let router = new VRouter({
     },
     {
       path: '/apple/:color',
-      name: 'Apple',
       component: Apple
     },
     {
       path: '/banana',
-      name: 'Banana',
       component: Banana,
       children: [
         {
           path: 'yellow',
-          name: 'YellowBanner',
           component: YellowBanner
         }
       ]
