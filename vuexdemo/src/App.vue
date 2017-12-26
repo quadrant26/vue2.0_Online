@@ -1,13 +1,34 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view/>
+    <h4>{{ totalPrice }}</h4>
+    <Apple></Apple>
+    <Banana></Banana>
   </div>
 </template>
 
 <script>
+import Apple from './components/apple';
+import Banana from './components/banana';
+
+// console.log($this.store.state.count);
+
 export default {
-  name: 'app'
+  name: 'app',
+  computed: {
+    totalPrice () {
+      return this.$store.getters.getTotal;
+    }
+  },
+  methods: {
+    increment () {
+      this.count ++;
+    }
+  },
+  components:{
+    Apple,
+    Banana
+  }
 }
 </script>
 
